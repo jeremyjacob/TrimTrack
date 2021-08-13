@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+  
+    "name": "TrimTrack",
+    "description": "Trim start/stop times for tracks on Spotify",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+  
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*", "https://open.spotify.com/playlist/*"],
+            "js": ["dist/js/content_script.js"],
+            "css": ["dist/style.css"]
+        }
+    ],
+  
+    "permissions": [
+      "storage",
+      "<all_urls>"
+    ]
+  }

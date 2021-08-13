@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+::selection {
+    color: #222;
+    background: #fafafa;
+}
+
+.trim {
+    transition: opacity 0.15s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.trim:active {
+    /*transform: scale(0.95);*/
+    opacity: 0.6;
+}
